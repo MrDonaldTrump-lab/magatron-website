@@ -1,0 +1,1 @@
+# MAGATron Next.js Website
