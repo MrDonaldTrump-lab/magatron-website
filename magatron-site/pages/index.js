@@ -111,7 +111,9 @@ export default function Home() {
             MAGATron's whitepaper outlines the mission, tokenomics, governance, roadmap, and future vision of the ecosystem.
             It is a must-read for anyone looking to dive deeper into the philosophy and mechanics of the project.
           </p>
-          <button className="border border-white text-white py-2 px-4 rounded hover:bg-white hover:text-black">Download Whitepaper (PDF)</button>
+          <a href="/whitepaper">
+           <button className="border border-white text-white py-2 px-4 rounded hover:bg-white hover:text-black">View Full Whitepaper</button>
+          </a>
         </div>
       </motion.section>
 
