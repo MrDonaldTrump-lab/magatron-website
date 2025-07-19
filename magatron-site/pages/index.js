@@ -49,7 +49,7 @@ export default function Home() {
           />
           <h2 className="text-3xl font-bold mb-4 text-red-100">Tokenomics</h2>
           <ul className="list-disc list-inside text-white/90 space-y-2">
-            <li>Total Supply: 1,000,000,000 MAGT</li>
+            <li>Total Supply: 47,000,000,000 MAGT</li>
             <li>Chains: Ethereum & Solana</li>
             <li>Distribution: 90% Community, 5% Team, 5% Liquidity</li>
             <li>No Presale, No VC — 100% Grassroots</li>
