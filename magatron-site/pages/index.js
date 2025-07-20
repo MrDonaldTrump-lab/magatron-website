@@ -21,7 +21,7 @@ export default function Home() {
         <p className="text-lg mt-2 italic text-red-100">The Memecoin from the Future Timeline</p>
         <div className="mt-4 flex justify-center gap-4">
           <button className="bg-white text-black font-bold py-2 px-4 rounded hover:bg-red-300">Join Telegram</button>
-          <button className="bg-red-600 text-white font-bold py-2 px-4 rounded hover:bg-red-500">Buy (Coming Soon)</button>
+          <button className="bg-white text-black font-bold py-2 px-4 rounded hover:bg-red-500">Buy (Coming Soon)</button>
         </div>
       </header>
 
@@ -73,21 +73,21 @@ export default function Home() {
                   "Initial Meme Campaigns",
                 ].map((item, idx) => <li key={idx}>{item}</li>)}
 
-                {phase === "Phase 2" && [
+                {phase === "Phase 2 (After phase 2 community will drive, any updates or just keep pure meme based ecosystem" && [
                   "CoinGecko & CoinMarketCap Listings",
                   "DEX Liquidity (Raydium/Uniswap)",
                   "Weekly Airdrops & Meme Contests",
                   "Telegram & Twitter Campaigns",
                 ].map((item, idx) => <li key={idx}>{item}</li>)}
 
-                {phase === "Phase 3" && [
+                {phase === "Phase 3 (Community takeover from here)" && [
                   "Staking Platform Launch",
                   "DAO Governance Voting",
                   "NFT Collection: MAGATron Avatars",
                   "GameFi Exploration",
                 ].map((item, idx) => <li key={idx}>{item}</li>)}
 
-                {phase === "Phase 4" && [
+                {phase === "Phase 4 (Roadmap updates will be community driven)" && [
                   "Cross-Chain Integration",
                   "Major Exchange Listings",
                   "Real-World Partnerships",
