@@ -62,7 +62,7 @@ export default function Home() {
       <motion.section variants={fadeIn} initial="hidden" whileInView="show" viewport={{ once: true }} className="relative z-10 px-6 py-12 max-w-5xl mx-auto bg-black border-t border-red-700">
         <h2 className="text-3xl font-bold mb-4 text-red-100">Roadmap</h2>
         <div className="grid md:grid-cols-2 gap-6">
-          {["Phase 1", "Phase 2", "Phase 3", "Phase 4"].map((phase, i) => (
+          {["Phase 1", "Phase 2"].map((phase, i) => (
             <div key={i} className="bg-white/10 backdrop-blur-md p-4 rounded-xl">
               <strong>{phase}:</strong>
               <ul className="list-disc list-inside ml-4 mt-2 text-white/90">
