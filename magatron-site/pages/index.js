@@ -62,7 +62,7 @@ export default function Home() {
       <motion.section variants={fadeIn} initial="hidden" whileInView="show" viewport={{ once: true }} className="relative z-10 px-6 py-12 max-w-5xl mx-auto bg-black border-t border-red-700">
         <h2 className="text-3xl font-bold mb-4 text-red-100">Roadmap</h2>
         <div className="grid md:grid-cols-2 gap-6">
-          {["Phase 1", "Phase 2"].map((phase, i) => (
+          {["Phase 1", "Phase 2", "Phase 3 (Community takeover)"].map((phase, i) => (
             <div key={i} className="bg-white/10 backdrop-blur-md p-4 rounded-xl">
               <strong>{phase}:</strong>
               <ul className="list-disc list-inside ml-4 mt-2 text-white/90">
@@ -73,18 +73,16 @@ export default function Home() {
                   "Initial Meme Campaigns",
                 ].map((item, idx) => <li key={idx}>{item}</li>)}
 
-                {phase === "Phase 2 (After phase 2 community will drive, any updates or just keep pure meme based ecosystem" && [
+                {phase === "Phase 2" && [
                   "CoinGecko & CoinMarketCap Listings",
                   "DEX Liquidity (Raydium/Uniswap)",
                   "Weekly Airdrops & Meme Contests",
                   "Telegram & Twitter Campaigns",
                 ].map((item, idx) => <li key={idx}>{item}</li>)}
 
-                {phase === "Phase 3 (Community takeover from here)" && [
-                  "Staking Platform Launch",
-                  "DAO Governance Voting",
-                  "NFT Collection: MAGATron Avatars",
-                  "GameFi Exploration",
+                {phase === "Phase 3 (Community takeover)" && [
+                  "Memes takeover",
+                  "Further updates and phases will be decided by the community"
                 ].map((item, idx) => <li key={idx}>{item}</li>)}
 
                 {phase === "Phase 4 (Roadmap updates will be community driven)" && [
