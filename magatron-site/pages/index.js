@@ -119,3 +119,223 @@ export default function Home() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
+          className="relative z-10 flex flex-col items-center py-10 px-6 bg-[url('/cosmic-bg.png')] bg-cover bg-center"
+        >
+          <img src="/trump-hero.png" alt="Hero Trump" className="w-72 rounded-2xl shadow-2xl mb-6" />
+          <img src="/trump-kids.png" alt="Crypto Kids" className="w-96 rounded-2xl shadow-2xl mb-6" />
+          <img
+            src="/magatron-retro-trump.png"
+            alt="Retro Futuristic Trump"
+            className="w-96 rounded-2xl shadow-2xl"
+          />
+        </motion.section>
+
+        {/* Futuristic showcase (restored) */}
+        <motion.section
+          variants={fadeIn}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          className="relative z-10 flex flex-col items-center py-12 px-6 bg-gradient-to-t from-black/90 via-red-950/80 to-black"
+        >
+          <h2 className="text-3xl font-bold text-red-100 mb-8">The Future of Meme Power</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <img src="/trump-cyberpunk.png" alt="Cyberpunk Trump" className="rounded-2xl shadow-xl" />
+            <img src="/trump-mech.png" alt="Trump Mech" className="rounded-2xl shadow-xl" />
+            <img src="/trump-futuristic.png" alt="Futuristic Trump" className="rounded-2xl shadow-xl" />
+          </div>
+        </motion.section>
+
+        {/* About */}
+        <motion.section
+          id="about"
+          variants={fadeIn}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          className="relative z-10 px-6 py-12 max-w-5xl mx-auto bg-black/50 backdrop-blur-md rounded-2xl border border-red-700"
+        >
+          <h2 className="text-3xl font-bold mb-4 text-red-100">About MAGATron</h2>
+          <p className="text-white/90 leading-relaxed">
+            MAGATron is a meme-fueled, community-powered ERC-20 built for speed and fun. Fixed supply, no minting after deploy,
+            and clear launch protection via trading gates and anti-whale limits. We grow through memes, contests, and transparent
+            updates.
+          </p>
+        </motion.section>
+
+        {/* Tokenomics */}
+        <motion.section
+          id="tokenomics"
+          variants={fadeIn}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          className="relative z-10 px-6 py-12 max-w-6xl mx-auto"
+        >
+          <div className="grid md:grid-cols-3 gap-6">
+            <InfoCard title="Supply & Limits">
+              <ul className="list-disc list-inside text-white/90 space-y-1">
+                <li>Total Supply: 47,000,000,000 MAGT</li>
+                <li>Decimals: 18</li>
+                <li>Max Tx: 2% • Max Wallet: 3%</li>
+                <li>No minting after deploy</li>
+              </ul>
+            </InfoCard>
+            <InfoCard title="Security">
+              <ul className="list-disc list-inside text-white/90 space-y-1">
+                <li>OpenZeppelin ERC-20 + Ownable2Step</li>
+                <li>Enable trading or schedule start</li>
+                <li>Optional: lockForever() after launch</li>
+                <li>LP locked via LPManager</li>
+              </ul>
+            </InfoCard>
+            <InfoCard title="Links">
+              <ul className="list-disc list-inside text-white/90 space-y-1">
+                <li>
+                  Contract: <span className="text-white/70">0x…youraddress</span>
+                </li>
+                <li>
+                  <a href="/whitepaper.pdf" className="underline hover:text-white">
+                    Whitepaper
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://x.com/MAGATron_Coin"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="underline hover:text-white"
+                  >
+                    X (Twitter)
+                  </a>
+                </li>
+                <li>
+                  <a href="/discord" className="underline hover:text-white">
+                    Discord
+                  </a>
+                </li>
+              </ul>
+            </InfoCard>
+          </div>
+        </motion.section>
+
+        {/* Roadmap */}
+        <motion.section
+          id="roadmap"
+          variants={fadeIn}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          className="relative z-10 px-6 py-12 max-w-6xl mx-auto"
+        >
+          <h2 className="text-3xl font-bold mb-6 text-red-100">Roadmap</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            {[
+              {
+                phase: "Phase 1",
+                items: [
+                  "ERC-20 deploy (Ethereum)",
+                  "Website + Socials",
+                  "Meme campaign v1",
+                  "LP lock via LPManager",
+                ],
+              },
+              {
+                phase: "Phase 2",
+                items: [
+                  "DEX liquidity (Uniswap)",
+                  "CoinGecko & CMC submissions",
+                  "Weekly meme contests",
+                  "Spaces/AMAs",
+                ],
+              },
+              {
+                phase: "Phase 3 (Community)",
+                items: ["DAO-style votes for features", "Branded meme packs", "CEX outreach"],
+              },
+            ].map(({ phase, items }, i) => (
+              <div
+                key={i}
+                className="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/10"
+              >
+                <strong className="text-lg">{phase}</strong>
+                <ul className="list-disc list-inside ml-4 mt-2 text-white/90 space-y-1">
+                  {items.map((it, idx) => (
+                    <li key={idx}>{it}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </motion.section>
+
+        {/* Whitepaper */}
+        <motion.section
+          id="whitepaper"
+          variants={fadeIn}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          className="relative z-10 px-6 py-12 max-w-5xl mx-auto"
+        >
+          <div className="backdrop-blur-md bg-black/70 p-6 rounded-2xl border border-white/10 relative">
+            <h2 className="text-3xl font-bold mb-4 text-red-100">Whitepaper</h2>
+            <p className="text-white/90 mb-5">
+              Dive into mission, token design, launch protection, and community growth mechanics.
+            </p>
+            <a
+              href="/whitepaper.pdf"
+              className="inline-block border border-white text-white py-2.5 px-5 rounded-xl hover:bg-white hover:text-black"
+            >
+              View Full Whitepaper
+            </a>
+          </div>
+        </motion.section>
+
+        {/* Follow */}
+        <motion.section
+          variants={fadeIn}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          className="relative z-10 bg-gradient-to-r from-red-700 to-black px-6 py-12 text-center border-t border-red-800"
+        >
+          <h2 className="text-3xl font-bold mb-4 text-red-100">Follow Us</h2>
+          <div className="flex justify-center gap-4">
+            <a
+              href="https://x.com/MAGATron_Coin"
+              target="_blank"
+              rel="noreferrer"
+              className="border border-white text-white py-2 px-4 rounded hover:bg-white hover:text-black"
+            >
+              Twitter
+            </a>
+          </div>
+        </motion.section>
+
+        {/* Footer */}
+        <footer className="relative z-10 text-center text-sm text-white/60 py-6 border-t border-red-800 bg-black">
+          © {new Date().getFullYear()} MAGATron. All rights reserved. Not financial advice.
+        </footer>
+      </div>
+    </>
+  );
+}
+
+/* Small UI helpers */
+function Badge({ children }) {
+  return (
+    <span className="px-3 py-1 rounded-full bg-white/10 text-white/80 border border-white/10">
+      {children}
+    </span>
+  );
+}
+
+function InfoCard({ title, children }) {
+  return (
+    <div className="rounded-2xl border border-white/10 bg-white/5 p-6 shadow-[0_10px_30px_rgba(0,0,0,0.25)]">
+      <h3 className="text-xl font-semibold mb-3">{title}</h3>
+      {children}
+    </div>
+  );
+}
