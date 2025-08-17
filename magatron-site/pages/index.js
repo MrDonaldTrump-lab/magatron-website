@@ -1,13 +1,12 @@
+import React from "react";
 import Head from "next/head";
-import { motion } from "framer-motion";
-import Link from "next/link";
 
-export default function Home() {
+export default function Whitepaper() {
   return (
     <>
       <Head>
-        <title>MAGATron — The Meme Revolution</title>
-        <meta name="description" content="Official site of MAGATron memecoin" />
+        <title>MAGATron — Whitepaper</title>
+        <meta name="description" content="MAGATron official whitepaper" />
         <link rel="icon" type="image/png" sizes="32x32" href="/magatron-32.png" />
         <link rel="icon" type="image/png" sizes="192x192" href="/magatron-512.png" />
         <link rel="apple-touch-icon" href="/magatron-512.png" />
@@ -15,70 +14,90 @@ export default function Home() {
       </Head>
 
       <div className="relative min-h-screen text-white font-sans bg-gradient-to-br from-red-950 via-black to-red-900 overflow-hidden">
-        {/* Background planet overlay */}
-        <img
-          src="/planet-overlay.png"
-          alt="planet"
-          className="absolute top-[10%] left-[5%] w-60 opacity-10 pointer-events-none z-0 animate-pulse"
-        />
+        <div className="relative z-10 max-w-5xl mx-auto py-16 px-6 bg-black/70 backdrop-blur-sm rounded-xl">
+          <h1 className="text-5xl font-extrabold text-center text-red-400 mb-10">
+            MAGATron Whitepaper
+          </h1>
 
-        {/* Hero Section */}
-        <div className="relative z-10 flex flex-col items-center justify-center text-center min-h-screen px-6">
-          <motion.h1
-            initial={{ opacity: 0, y: -30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-            className="text-6xl md:text-7xl font-extrabold text-red-500 drop-shadow-lg"
-          >
-            MAGATron
-          </motion.h1>
+          {/* Introduction */}
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-red-200 mb-4">1. Introduction</h2>
+            <p className="text-white/90">
+              MAGATron is a politically charged, meme-fueled, community-powered crypto token inspired by a futuristic timeline
+              where red-mech freedom fighters lead the charge against centralization and tyranny.
+            </p>
+          </section>
 
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.5, duration: 1 }}
-            className="mt-6 text-lg md:text-xl text-white/90 max-w-2xl"
-          >
-            The politically charged, meme-fueled, community-powered token leading the digital revolution.
-          </motion.p>
+          {/* Vision */}
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-red-200 mb-4">2. Vision & Lore</h2>
+            <p className="text-white/90">
+              In an alternate future, President MAGAtron and his cybernetic patriots wage war against corrupt centralized overlords.
+              With meme magic and blockchain shields, they fight to restore freedom across the galaxy.
+            </p>
+          </section>
 
-          {/* CTA buttons */}
-          <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <Link
-              href="/whitepaper"
-              className="inline-block border border-white text-white py-2.5 px-5 rounded-xl hover:bg-white hover:text-black transition"
-            >
-              View Full Whitepaper
-            </Link>
-            <a
-              href="https://x.com/magatron_coin"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block border border-red-500 text-red-500 py-2.5 px-5 rounded-xl hover:bg-red-600 hover:text-white transition"
-            >
-              Follow on X
-            </a>
-          </div>
+          {/* Tokenomics */}
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-red-200 mb-4">3. Tokenomics</h2>
+            <ul className="list-disc ml-6 text-white/90 space-y-2">
+              <li>Total Supply: 47,000,000,000 MAGT</li>
+              <li>Public Liquidity Pool: 80% (locked 6 months)</li>
+              <li>Community Airdrops & Campaigns: 10%</li>
+              <li>Team Wallet: 5% (vested 6 months)</li>
+              <li>Treasury/DAO/Staking: 5%</li>
+              <li>Optional burn mechanism in future</li>
+            </ul>
+          </section>
+
+          {/* Utility */}
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-red-200 mb-4">4. Utility & Ecosystem</h2>
+            <p className="text-white/90">
+              MAGT fuels staking, NFT avatars, voting rights, GameFi, and meme creation. The ecosystem thrives on community-driven creativity.
+            </p>
+          </section>
+
+          {/* Roadmap */}
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-red-200 mb-4">5. Roadmap</h2>
+            <ol className="list-decimal ml-6 text-white/90 space-y-2">
+              <li>Token Launch (Solana)</li>
+              <li>Website & Social Media Growth</li>
+              <li>Community Campaigns & Airdrops</li>
+              <li>Listings (CoinGecko, CMC)</li>
+              <li>Staking Platform</li>
+              <li>DAO Governance</li>
+              <li>NFT Drop</li>
+              <li>Cross-chain Expansion</li>
+              <li>GameFi + MemeFi Partnerships</li>
+            </ol>
+          </section>
+
+          {/* Security */}
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-red-200 mb-4">6. Security & Trust</h2>
+            <p className="text-white/90">
+              Liquidity locked for 6–12 months, no VC presale, no backdoor minting. Contracts will be audited and open-sourced.
+            </p>
+          </section>
+
+          {/* Governance */}
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-red-200 mb-4">7. Governance</h2>
+            <p className="text-white/90">
+              DAO voting will let MAGT holders decide burns, liquidity strategies, and campaigns.
+            </p>
+          </section>
+
+          {/* Disclaimer */}
+          <section>
+            <h2 className="text-3xl font-bold text-red-200 mb-4">8. Disclaimer</h2>
+            <p className="text-white/90 italic">
+              MAGATron is a meme-based community experiment. This is not financial advice. Always DYOR.
+            </p>
+          </section>
         </div>
-
-        {/* Footer Links */}
-        <footer className="relative z-10 py-6 bg-black/50 backdrop-blur-sm text-center">
-          <p className="text-sm text-white/70">
-            © {new Date().getFullYear()} MAGATron —{" "}
-            <Link href="/whitepaper" className="underline hover:text-white">
-              Whitepaper
-            </Link>{" "}
-            |{" "}
-            <a
-              href="https://x.com/magatron_coin"
-              className="underline hover:text-white"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Twitter/X
-            </a>
-          </p>
-        </footer>
       </div>
     </>
   );
