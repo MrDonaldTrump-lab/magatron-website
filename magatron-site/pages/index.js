@@ -1,104 +1,93 @@
-import React from "react";
 import Head from "next/head";
+import Link from "next/link";
 
-export default function Whitepaper() {
+export default function Home() {
   return (
-    <>
+    <div className="relative min-h-screen text-white font-sans bg-gradient-to-br from-red-950 via-black to-red-900 overflow-hidden">
       <Head>
-        <title>MAGATron — Whitepaper</title>
-        <meta name="description" content="MAGATron official whitepaper" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/magatron-32.png" />
-        <link rel="icon" type="image/png" sizes="192x192" href="/magatron-512.png" />
-        <link rel="apple-touch-icon" href="/magatron-512.png" />
-        <meta property="og:image" content="/magatron-512.png" />
+        <title>MAGATron ($MAGT)</title>
+        <meta
+          name="description"
+          content="The intergalactic memecoin — to the moon… and beyond tariffs."
+        />
+        {/* Favicons */}
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/icons/magatron-32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="192x192"
+          href="/icons/magatron-512.png"
+        />
+        <link rel="apple-touch-icon" href="/icons/magatron-512.png" />
+        {/* Social preview */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="MAGATron ($MAGT)" />
+        <meta
+          property="og:description"
+          content="The intergalactic memecoin — to the moon… and beyond tariffs."
+        />
+        <meta property="og:image" content="/icons/magatron-512.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="MAGATron ($MAGT)" />
+        <meta
+          name="twitter:description"
+          content="The intergalactic memecoin — to the moon… and beyond tariffs."
+        />
+        <meta name="twitter:image" content="/icons/magatron-512.png" />
       </Head>
 
-      <div className="relative min-h-screen text-white font-sans bg-gradient-to-br from-red-950 via-black to-red-900 overflow-hidden">
-        <div className="relative z-10 max-w-5xl mx-auto py-16 px-6 bg-black/70 backdrop-blur-sm rounded-xl">
-          <h1 className="text-5xl font-extrabold text-center text-red-400 mb-10">
-            MAGATron Whitepaper
-          </h1>
+      {/* Background Art */}
+      <img
+        src="/planet-overlay.png"
+        alt="planet"
+        className="absolute top-[10%] left-[5%] w-60 opacity-10 pointer-events-none z-0 animate-pulse"
+      />
+      <img
+        src="/mech-overlay.png"
+        alt="mech"
+        className="absolute bottom-0 right-0 w-96 opacity-20 pointer-events-none z-0"
+      />
 
-          {/* Introduction */}
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-red-200 mb-4">1. Introduction</h2>
-            <p className="text-white/90">
-              MAGATron is a politically charged, meme-fueled, community-powered crypto token inspired by a futuristic timeline
-              where red-mech freedom fighters lead the charge against centralization and tyranny.
-            </p>
-          </section>
+      {/* Hero Section */}
+      <main className="relative z-10 flex flex-col items-center justify-center min-h-screen px-6 text-center">
+        <h1 className="text-6xl md:text-7xl font-extrabold text-red-400 drop-shadow-lg">
+          MAGATron ($MAGT)
+        </h1>
+        <p className="mt-6 max-w-2xl text-lg md:text-xl text-white/90">
+          The intergalactic memecoin — forged in satire, fueled by memes,
+          and unstoppable by tariffs. Join the red mech rebellion.
+        </p>
 
-          {/* Vision */}
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-red-200 mb-4">2. Vision & Lore</h2>
-            <p className="text-white/90">
-              In an alternate future, President MAGAtron and his cybernetic patriots wage war against corrupt centralized overlords.
-              With meme magic and blockchain shields, they fight to restore freedom across the galaxy.
-            </p>
-          </section>
-
-          {/* Tokenomics */}
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-red-200 mb-4">3. Tokenomics</h2>
-            <ul className="list-disc ml-6 text-white/90 space-y-2">
-              <li>Total Supply: 47,000,000,000 MAGT</li>
-              <li>Public Liquidity Pool: 80% (locked 6 months)</li>
-              <li>Community Airdrops & Campaigns: 10%</li>
-              <li>Team Wallet: 5% (vested 6 months)</li>
-              <li>Treasury/DAO/Staking: 5%</li>
-              <li>Optional burn mechanism in future</li>
-            </ul>
-          </section>
-
-          {/* Utility */}
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-red-200 mb-4">4. Utility & Ecosystem</h2>
-            <p className="text-white/90">
-              MAGT fuels staking, NFT avatars, voting rights, GameFi, and meme creation. The ecosystem thrives on community-driven creativity.
-            </p>
-          </section>
-
-          {/* Roadmap */}
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-red-200 mb-4">5. Roadmap</h2>
-            <ol className="list-decimal ml-6 text-white/90 space-y-2">
-              <li>Token Launch (Solana)</li>
-              <li>Website & Social Media Growth</li>
-              <li>Community Campaigns & Airdrops</li>
-              <li>Listings (CoinGecko, CMC)</li>
-              <li>Staking Platform</li>
-              <li>DAO Governance</li>
-              <li>NFT Drop</li>
-              <li>Cross-chain Expansion</li>
-              <li>GameFi + MemeFi Partnerships</li>
-            </ol>
-          </section>
-
-          {/* Security */}
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-red-200 mb-4">6. Security & Trust</h2>
-            <p className="text-white/90">
-              Liquidity locked for 6–12 months, no VC presale, no backdoor minting. Contracts will be audited and open-sourced.
-            </p>
-          </section>
-
-          {/* Governance */}
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-red-200 mb-4">7. Governance</h2>
-            <p className="text-white/90">
-              DAO voting will let MAGT holders decide burns, liquidity strategies, and campaigns.
-            </p>
-          </section>
-
-          {/* Disclaimer */}
-          <section>
-            <h2 className="text-3xl font-bold text-red-200 mb-4">8. Disclaimer</h2>
-            <p className="text-white/90 italic">
-              MAGATron is a meme-based community experiment. This is not financial advice. Always DYOR.
-            </p>
-          </section>
+        <div className="mt-10 flex flex-wrap justify-center gap-6">
+          <Link
+            href="/whitepaper"
+            className="px-6 py-3 bg-red-600 hover:bg-red-700 rounded-xl font-bold shadow-lg transition"
+          >
+            Read Whitepaper
+          </Link>
+          <a
+            href="https://t.me/magatron_coin"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-xl font-bold shadow-lg transition"
+          >
+            Join Telegram
+          </a>
+          <a
+            href="https://x.com/magatron_coin"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-3 bg-sky-500 hover:bg-sky-600 rounded-xl font-bold shadow-lg transition"
+          >
+            Follow on Twitter
+          </a>
         </div>
-      </div>
-    </>
+      </main>
+    </div>
   );
 }
