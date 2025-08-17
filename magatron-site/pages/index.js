@@ -195,9 +195,7 @@ export default function Home() {
                   Contract: <span className="text-white/70">0x…youraddress</span>
                 </li>
                 <li>
-                  <a href="/whitepaper.pdf" className="underline hover:text-white">
-                    Whitepaper
-                  </a>
+                  <a href="/whitepaper" className="underline hover:text-white">Whitepaper</a>
                 </li>
                 <li>
                   <a
@@ -284,7 +282,7 @@ export default function Home() {
               Dive into mission, token design, launch protection, and community growth mechanics.
             </p>
             <a
-              href="/whitepaper.pdf"
+              href="/whitepaper"
               className="inline-block border border-white text-white py-2.5 px-5 rounded-xl hover:bg-white hover:text-black"
             >
               View Full Whitepaper
