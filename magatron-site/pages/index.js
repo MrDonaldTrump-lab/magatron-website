@@ -140,6 +140,7 @@ export default function Home() {
         >
           <h2 className="text-3xl font-bold text-red-100 mb-8">The Future of Meme Power</h2>
           <div className="grid md:grid-cols-3 gap-6">
+            <img src="/Meme-resistence-banner.png" alt="Cyberpunk Trump" className="rounded-2xl shadow-xl" />
             <img src="/trump-cyberpunk.png" alt="Cyberpunk Trump" className="rounded-2xl shadow-xl" />
             <img src="/trump-mech.png" alt="Trump Mech" className="rounded-2xl shadow-xl" />
             <img src="/trump-futuristic.png" alt="Futuristic Trump" className="rounded-2xl shadow-xl" />
