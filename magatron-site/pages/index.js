@@ -15,7 +15,7 @@ export default function Home() {
         <title>MAGATron ($MAGT)</title>
         <meta
           name="description"
-          content="The intergalactic memecoin — to the moon… and beyond tariffs."
+          content="AI-powered, politically charged memecoin — built for virality."
         />
         {/* Favicons (files in /public) */}
         <link rel="icon" type="image/png" sizes="32x32" href="/magatron-32.png?v=2" />
@@ -26,14 +26,14 @@ export default function Home() {
         <meta property="og:title" content="MAGATron ($MAGT)" />
         <meta
           property="og:description"
-          content="The intergalactic memecoin — to the moon… and beyond tariffs."
+          content="AI-powered, politically charged memecoin — built for virality."
         />
         <meta property="og:image" content="/magatron-512.png?v=2" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="MAGATron ($MAGT)" />
         <meta
           name="twitter:description"
-          content="The intergalactic memecoin — to the moon… and beyond tariffs."
+          content="AI-powered, politically charged memecoin — built for virality."
         />
         <meta name="twitter:image" content="/magatron-512.png?v=2" />
       </Head>
@@ -87,7 +87,7 @@ export default function Home() {
           />
           <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight">MAGATron</h1>
           <p className="text-lg md:text-xl mt-3 text-red-100">
-            The intergalactic memecoin — to the moon… and beyond tariffs.
+            AI-powered, politically charged memecoin — built for virality.
           </p>
           <div className="mt-6 flex justify-center gap-3">
             <a
@@ -108,12 +108,12 @@ export default function Home() {
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4 text-sm text-white/80">
             <Badge>47,000,000,000 Supply</Badge>
             <Badge>18 Decimals</Badge>
-            <Badge>Anti Whale: 2% Max Tx • 3% Max Wallet</Badge>
-            <Badge>LP Lock on Launch</Badge>
+            <Badge>Anti-Whale: 2% Max Tx • 3% Max Wallet</Badge>
+            <Badge>LP Lock After Launch</Badge>
           </div>
         </section>
 
-        {/* Original hero image trio (restored) */}
+        {/* Original hero image trio */}
         <motion.section
           variants={fadeIn}
           initial="hidden"
@@ -130,7 +130,7 @@ export default function Home() {
           />
         </motion.section>
 
-        {/* Futuristic showcase (restored) */}
+        {/* Futuristic showcase */}
         <motion.section
           variants={fadeIn}
           initial="hidden"
@@ -157,9 +157,9 @@ export default function Home() {
         >
           <h2 className="text-3xl font-bold mb-4 text-red-100">About MAGATron</h2>
           <p className="text-white/90 leading-relaxed">
-            MAGATron is a meme-fueled, community-powered ERC-20 built for speed and fun. Fixed supply, no minting after deploy,
-            and clear launch protection via trading gates and anti-whale limits. We grow through memes, contests, and transparent
-            updates.
+            <span className="font-semibold">MAGATron ($MAGT)</span> is a politically charged, meme-fueled ERC-20 token
+            powered by AI-generated viral content. No VC, no presale — just community, memes, and a relentless push to
+            dominate the timeline. From AI-crafted images to coordinated meme raids, MAGATron is engineered for virality.
           </p>
         </motion.section>
 
@@ -181,14 +181,25 @@ export default function Home() {
                 <li>No minting after deploy</li>
               </ul>
             </InfoCard>
-            <InfoCard title="Security">
+            <InfoCard title="Distribution">
               <ul className="list-disc list-inside text-white/90 space-y-1">
-                <li>OpenZeppelin ERC-20 + Ownable2Step</li>
-                <li>Enable trading or schedule start</li>
-                <li>Optional: lockForever() after launch</li>
-                <li>LP locked via LPManager</li>
+                <li>Community airdrops for early supporters & creators</li>
+                <li>ETH raise to seed liquidity</li>
+                <li>LP tokens locked forever after launch</li>
+                <li>Team wallet only for ops until renounce</li>
               </ul>
             </InfoCard>
+            <InfoCard title="Trust & Verification">
+              <ul className="list-disc list-inside text-white/90 space-y-1">
+                <li>Contract verified on Etherscan</li>
+                <li>Independent audit planned post-launch</li>
+                <li>Ownership renounced after setup</li>
+                <li>Immutable limits once locked forever</li>
+              </ul>
+            </InfoCard>
+          </div>
+
+          <div className="mt-8 grid md:grid-cols-3 gap-6">
             <InfoCard title="Links">
               <ul className="list-disc list-inside text-white/90 space-y-1">
                 <li>
@@ -214,6 +225,22 @@ export default function Home() {
                 </li>
               </ul>
             </InfoCard>
+            <InfoCard title="Network">
+              <ul className="list-disc list-inside text-white/90 space-y-1">
+                <li>Chain: Ethereum</li>
+                <li>Token Standard: ERC-20</li>
+                <li>Router: Uniswap V2</li>
+                <li>Decimals: 18</li>
+              </ul>
+            </InfoCard>
+            <InfoCard title="Anti-Whale">
+              <ul className="list-disc list-inside text-white/90 space-y-1">
+                <li>2% max transaction</li>
+                <li>3% max wallet</li>
+                <li>Pair address excluded</li>
+                <li>Limits removable after launch</li>
+              </ul>
+            </InfoCard>
           </div>
         </motion.section>
 
@@ -230,26 +257,40 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-6">
             {[
               {
-                phase: "Phase 1",
+                phase: "Phase 1 — Preparation",
                 items: [
-                  "ERC-20 deploy (Ethereum)",
-                  "Website + Socials",
-                  "Meme campaign v1",
-                  "LP lock via LPManager",
+                  "Deploy ERC-20 contract (Ethereum)",
+                  "Website & social media launch",
+                  "Initial AI meme wave & community building",
                 ],
               },
               {
-                phase: "Phase 2",
+                phase: "Phase 2 — Launch",
                 items: [
-                  "DEX liquidity (Uniswap)",
-                  "CoinGecko & CMC submissions",
-                  "Weekly meme contests",
-                  "Spaces/AMAs",
+                  "Community airdrops",
+                  "Raise ETH → seed Uniswap LP",
+                  "Enable trading",
+                  "Lock LP tokens forever",
+                  "Verify contract on Etherscan",
+                  "Independent security audit",
+                  "Renounce ownership",
                 ],
               },
               {
-                phase: "Phase 3 (Community)",
-                items: ["DAO-style votes for features", "Branded meme packs", "CEX outreach"],
+                phase: "Phase 3 — Expansion",
+                items: [
+                  "DEX tracking (DEXTools/Uniswap Info) & CG/CMC submissions",
+                  "CEX outreach and listings",
+                  "Mass meme campaigns, hashtag raids, collabs",
+                ],
+              },
+              {
+                phase: "Phase 4 — Community Takeover",
+                items: [
+                  "Fully community-driven growth",
+                  "New AI meme waves guided by holders",
+                  "Ongoing viral marketing & bounties",
+                ],
               },
             ].map(({ phase, items }, i) => (
               <div
@@ -279,14 +320,22 @@ export default function Home() {
           <div className="backdrop-blur-md bg-black/70 p-6 rounded-2xl border border-white/10 relative">
             <h2 className="text-3xl font-bold mb-4 text-red-100">Whitepaper</h2>
             <p className="text-white/90 mb-5">
-              Dive into mission, token design, launch protection, and community growth mechanics.
+              Read the MAGATron mission, token design, launch protections, and meme-first strategy.
             </p>
-            <a
-              href="/whitepaper"
-              className="inline-block border border-white text-white py-2.5 px-5 rounded-xl hover:bg-white hover:text-black"
-            >
-              View Full Whitepaper
-            </a>
+            <div className="flex gap-3 flex-wrap">
+              <a
+                href="/whitepaper"
+                className="inline-block border border-white text-white py-2.5 px-5 rounded-xl hover:bg-white hover:text-black"
+              >
+                View Full Whitepaper
+              </a>
+              <a
+                href="/whitepaper/MAGATron_Whitepaper_v2.pdf"
+                className="inline-block border border-white/40 text-white/90 py-2.5 px-5 rounded-xl hover:border-white"
+              >
+                Download PDF
+              </a>
+            </div>
           </div>
         </motion.section>
 
