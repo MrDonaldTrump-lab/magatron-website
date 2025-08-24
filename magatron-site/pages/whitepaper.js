@@ -156,7 +156,7 @@ export default function Whitepaper() {
           {/* Optional: link to downloadable PDF if you host it at /whitepaper/MAGATron_Whitepaper_v2.pdf */}
           <div className="mt-10 text-center">
             <a
-              href="/whitepaper/MAGATron_Whitepaper_v2.pdf"
+              href="/MAGATron_Whitepaper_v2.pdf"
               className="inline-block px-6 py-3 rounded-lg border border-red-400/50 hover:border-red-300 text-red-200 hover:text-white transition"
             >
               Download PDF Whitepaper
