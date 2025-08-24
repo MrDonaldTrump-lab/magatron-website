@@ -281,7 +281,7 @@ export default function Home() {
                 phase: "Phase 3 — Expansion",
                 items: [
                   "DEX tracking (DEXTools/Uniswap Info) & CG/CMC submissions",
-                  "CEX outreach and listings",
+                  "CEX outreach and listings, after anti whale config removal for approvals",
                   "Mass meme campaigns, hashtag raids, collabs",
                 ],
               },
@@ -331,7 +331,7 @@ export default function Home() {
                 View Full Whitepaper
               </a>
               <a
-                href="/whitepaper/MAGATron_Whitepaper_v2.pdf"
+                href="/MAGATron_Whitepaper_v2.pdf"
                 className="inline-block border border-white/40 text-white/90 py-2.5 px-5 rounded-xl hover:border-white"
               >
                 Download PDF
